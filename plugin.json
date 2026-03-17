@@ -1,0 +1,13 @@
+{
+  "name": "claude-statusline-vt",
+  "version": "1.0.0",
+  "description": "Claude Code statusline: model, context%, rate limits (5h/7d), git branch, and BONUS TIME rainbow display",
+  "author": {
+    "name": "Tokine3",
+    "url": "https://github.com/Tokine3"
+  },
+  "repository": "https://github.com/Tokine3/claude-statusline-vt",
+  "license": "MIT",
+  "keywords": ["statusline", "rate-limit", "git", "bonus-time"],
+  "skills": "./skills/"
+}
