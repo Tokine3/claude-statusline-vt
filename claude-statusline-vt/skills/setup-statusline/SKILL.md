@@ -5,16 +5,18 @@ description: Configure Claude Code to use the claude-statusline-vt script. Run t
 
 以下の手順でステータスラインを設定します。
 
-1. まず、このプラグインのインストールパスを確認します：
-   - プラグインは通常 `~/.claude/plugins/claude-statusline-vt/` にインストールされます
+1. まず、このスキルの `Base directory` から実際のインストールパスを特定します：
+   - Base directory の例: `~/.claude/plugins/cache/tokine3-plugins/claude-statusline-vt/1.0.0/skills/setup-statusline`
+   - `statusline.sh` のパスは Base directory から `skills/setup-statusline` を除いたディレクトリ直下です
+   - 例: `~/.claude/plugins/cache/tokine3-plugins/claude-statusline-vt/1.0.0/statusline.sh`
 
-2. `~/.claude/settings.json` を開き、`statusLine` の設定を追加または更新します：
+2. `~/.claude/settings.json` を開き、`statusLine` の設定を追加または更新します（パスは上で特定した実際のパスを使用）：
 
 ```json
 {
   "statusLine": {
     "type": "command",
-    "command": "bash ~/.claude/plugins/claude-statusline-vt/statusline.sh"
+    "command": "bash ~/.claude/plugins/cache/tokine3-plugins/claude-statusline-vt/1.0.0/statusline.sh"
   }
 }
 ```
